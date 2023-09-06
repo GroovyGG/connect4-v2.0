@@ -22,7 +22,6 @@ const Chip = ({chip, currentPlayer, onClick}: ChipProps) => {
   return (
     <StyledChip
       currentPlayer={currentPlayer}
-      value={value}
       onClick={() => onClick(chip, currentPlayer)}
     >
       {ChipSVG}
@@ -44,8 +43,8 @@ const StyledChip = styled.div<{ currentPlayer: CurrentPlayer }>`
   justify-content: center;
 
   img {
-    width: 60px;
-    height: 60px; // Adjust as necessary
+    width: 64px;
+    height: 64px; // Adjust as necessary
   }
 
   :hover {
